@@ -63,11 +63,11 @@ The key performance indicators (KPIs) calculated for this analysis are:
     SELECT SUM(quantity) AS Total_pizza_sold FROM pizza_sales;
    
 4.**Total Orders**:
-     ```sql
+      ```sql
     SELECT COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_sales;
 
 5 **Average Pizzas Per Order**:
-     ```sql
+      ```sql
       SELECT CAST(CAST(SUM(quantity) AS DECIMAL(10,2)) / 
       CAST(COUNT(DISTINCT order_id) AS DECIMAL(10,2)) AS DECIMAL(10,2)) AS Avg_Pizzas_per_order
       FROM pizza_sales;
@@ -75,38 +75,38 @@ The key performance indicators (KPIs) calculated for this analysis are:
 ### Chart Queries
 
 1.**Daily Trend for Total Orders**:
-    ```sql
+     ```sql
     SELECT DAYNAME(order_date) AS order_day, COUNT(DISTINCT order_id) AS total_orders 
     FROM pizza_sales
     GROUP BY DAYNAME(order_date);
    
 2.**Average Order Value**:
-    ```sql
+     ```sql
     SELECT MONTHNAME(order_date) AS Month_Name, COUNT(DISTINCT order_id) AS Total_Orders
     FROM pizza_sales
     GROUP BY MONTHNAME(order_date);
    
 3.**Percentage of Sales by Pizza Category**:
-    ```sql
+     ```sql
     SELECT pizza_category, CAST(SUM(total_price) AS DECIMAL(10,2)) as total_revenue,
     CAST(SUM(total_price) * 100 / (SELECT SUM(total_price) from pizza_sales) AS DECIMAL(10,2)) AS PCT
     FROM pizza_sales
     GROUP BY pizza_category;
      
 4.**Percentage of Sales by Pizza Size**:
-    ```sql
-   SELECT pizza_size, CAST(SUM(total_price) AS DECIMAL(10,2)) as total_revenue,
-   CAST(SUM(total_price) * 100 / (SELECT SUM(total_price) from pizza_sales) AS DECIMAL(10,2)) AS PCT
-   FROM pizza_sales
-   GROUP BY pizza_size
-   ORDER BY pizza_size;
+     ```sql
+    SELECT pizza_size, CAST(SUM(total_price) AS DECIMAL(10,2)) as total_revenue,
+    CAST(SUM(total_price) * 100 / (SELECT SUM(total_price) from pizza_sales) AS DECIMAL(10,2)) AS PCT
+    FROM pizza_sales
+    GROUP BY pizza_size
+    ORDER BY pizza_size;
 
 5.**Pizzas Sold by Pizza Category Total**:
-    ```sql
+     ```sql
      SELECT pizza_category, SUM(quantity) AS Total_Quantity_Sold
-    FROM  pizza_sales
-    WHERE MONTH(order_date) = 2
-    GROUP BY   pizza_category
+     FROM  pizza_sales
+     WHERE MONTH(order_date) = 2
+     GROUP BY   pizza_category
      ORDER BY Total_Quantity_Sold DESC;
 
 
