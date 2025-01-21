@@ -63,6 +63,7 @@ The key performance indicators (KPIs) calculated for this analysis are:
     SELECT SUM(quantity) AS Total_pizza_sold FROM pizza_sales;
    
 4.**Total Orders**:
+
     ```sql
    SELECT COUNT(DISTINCT order_id) AS Total_Orders 
    FROM pizza_sales;
