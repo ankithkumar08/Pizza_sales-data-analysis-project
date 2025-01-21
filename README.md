@@ -1,6 +1,4 @@
-# Pizza_sales-data-analysis-project
-
-# Pizza Sales Analysis - Power BI Dashboard
+# Pizza Sales Analysis - Excel |MySql| Power BI Dashboard  
 
 ## Project Overview
 This project aims to analyze key performance indicators (KPIs) and visualize various aspects of pizza sales data using Power BI. The analysis is based on the provided dataset `pizza_sales.csv`, and includes key insights such as revenue trends, sales by category, and the performance of different pizzas. The visualizations help us understand the performance of the pizza business in terms of sales, order trends, and popular products.
@@ -56,5 +54,5 @@ The key performance indicators (KPIs) calculated for this analysis are:
 1. **Total Revenue**:
    ```sql
    SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
+   SELECT (SUM(total_price) / COUNT(DISTINCT order_id)) AS Avg_order_Value FROM pizza_sales;
    
-SELECT (SUM(total_price) / COUNT(DISTINCT order_id)) AS Avg_order_Value FROM pizza_sales;
