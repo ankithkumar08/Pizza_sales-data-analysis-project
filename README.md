@@ -100,7 +100,7 @@ The key performance indicators (KPIs) calculated for this analysis are:
     GROUP BY pizza_category;
      
 4.**Percentage of Sales by Pizza Size**:
-    ```sql
+     ```sql
     SELECT pizza_size, CAST(SUM(total_price) AS DECIMAL(10,2)) as total_revenue,
     CAST(SUM(total_price) * 100 / (SELECT SUM(total_price) from pizza_sales) AS DECIMAL(10,2)) AS PCT
     FROM pizza_sales
@@ -108,7 +108,7 @@ The key performance indicators (KPIs) calculated for this analysis are:
     ORDER BY pizza_size;
 
 5.**Pizzas Sold by Pizza Category Total**:
-    ```sql
+      ```sql
       SELECT pizza_category, SUM(quantity) AS Total_Quantity_Sold
       FROM  pizza_sales
       WHERE MONTH(order_date) = 2
@@ -140,11 +140,11 @@ The key performance indicators (KPIs) calculated for this analysis are:
    ORDER BY Total_Pizza_sold DESC  LIMIT 5;
 9. **Bottom 5 Pizzas by Quantity:**
     ```sql
-   SELECT pizza_name, SUM(quantity) AS Total_Pizza_sold
-   FROM pizza_sales
-   GROUP BY pizza_name
-   ORDER BY Total_Pizza_sold ASC
-   LIMIT 5;
+    SELECT pizza_name, SUM(quantity) AS Total_Pizza_sold
+    FROM pizza_sales
+    GROUP BY pizza_name
+    ORDER BY Total_Pizza_sold ASC
+    LIMIT 5;
 10. **Top 5 Pizzas by Total Orders**:
      ```sql
     SELECT pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
