@@ -138,12 +138,12 @@ The key performance indicators (KPIs) calculated for this analysis are:
    ORDER BY Total_Pizza_sold ASC
    LIMIT 5;
 10. **Top 5 Pizzas by Total Orders**:
-    ```sql
-   SELECT pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
-   FROM pizza_sales
-   GROUP BY pizza_name
-   ORDER BY Total_Orders DESC
-   LIMIT 5;
+     ```sql
+    SELECT pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
+    FROM pizza_sales
+    GROUP BY pizza_name
+    ORDER BY Total_Orders DESC
+    LIMIT 5;
 11. **Borrom 5 Pizzas by Total Orders**:
    ```sql
    SELECT pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
@@ -151,27 +151,3 @@ The key performance indicators (KPIs) calculated for this analysis are:
    GROUP BY pizza_name
    ORDER BY Total_Orders ASC
    LIMIT 5;
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-   
-   
-
