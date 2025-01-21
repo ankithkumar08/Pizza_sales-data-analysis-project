@@ -73,27 +73,27 @@ The key performance indicators (KPIs) calculated for this analysis are:
       FROM pizza_sales;
 
 ### Chart Queries
+
 1.**Daily Trend for Total Orders**:
-    ```sql
+      ```sql
    SELECT DAYNAME(order_date) AS order_day, COUNT(DISTINCT order_id) AS total_orders 
    FROM pizza_sales
    GROUP BY DAYNAME(order_date);
    
 2.**Average Order Value**:
-    ```sql
+      ```sql
    SELECT MONTHNAME(order_date) AS Month_Name, COUNT(DISTINCT order_id) AS Total_Orders
    FROM pizza_sales
    GROUP BY MONTHNAME(order_date);
    
 3.**Percentage of Sales by Pizza Category**:
-    ```sql
+     ```sql
     SELECT pizza_category, CAST(SUM(total_price) AS DECIMAL(10,2)) as total_revenue,
     CAST(SUM(total_price) * 100 / (SELECT SUM(total_price) from pizza_sales) AS DECIMAL(10,2)) AS PCT
     FROM pizza_sales
     GROUP BY pizza_category;
      
 4.**Percentage of Sales by Pizza Size**:
-
     ```sql
    SELECT pizza_size, CAST(SUM(total_price) AS DECIMAL(10,2)) as total_revenue,
    CAST(SUM(total_price) * 100 / (SELECT SUM(total_price) from pizza_sales) AS DECIMAL(10,2)) AS PCT
