@@ -114,14 +114,15 @@ The key performance indicators (KPIs) calculated for this analysis are:
       WHERE MONTH(order_date) = 2
       GROUP BY   pizza_category
       ORDER BY Total_Quantity_Sold DESC;
+      
 6. **Top 5 Pizzas by Revenue**:
    
    ```sql
-   SELECT pizza_name, SUM(total_price) AS Total_Revenue
-   FROM pizza_sales
-   GROUP BY pizza_name
-   ORDER BY Total_Revenue DESC
-   LIMIT 5;
+    SELECT pizza_name, SUM(total_price) AS Total_Revenue
+    FROM pizza_sales
+    GROUP BY pizza_name
+    ORDER BY Total_Revenue DESC
+    LIMIT 5;
 7. **Bottom 5 Pizzas by Revenue**:
    
     ```sql
