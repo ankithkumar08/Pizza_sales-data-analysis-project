@@ -108,15 +108,15 @@ The key performance indicators (KPIs) calculated for this analysis are:
        GROUP BY pizza_size
        ORDER BY pizza_size;
 
-5.**Pizzas Sold by Pizza Category Total**:
-      ```sql
+5. **Pizzas Sold by Pizza Category Total**:
+   ```sql
        SELECT pizza_category, SUM(quantity) AS Total_Quantity_Sold
        FROM  pizza_sales
        WHERE MONTH(order_date) = 2
        GROUP BY   pizza_category
        ORDER BY Total_Quantity_Sold DESC;
       
-6. **Top 5 Pizzas by Revenue**:
+7. **Top 5 Pizzas by Revenue**:
    
    ```sql
     SELECT pizza_name, SUM(total_price) AS Total_Revenue
@@ -124,7 +124,7 @@ The key performance indicators (KPIs) calculated for this analysis are:
     GROUP BY pizza_name
     ORDER BY Total_Revenue DESC
     LIMIT 5;
-7. **Bottom 5 Pizzas by Revenue**:
+8. **Bottom 5 Pizzas by Revenue**:
    
     ```sql
    SELECT pizza_name, SUM(total_price) AS Total_Revenue
@@ -133,27 +133,27 @@ The key performance indicators (KPIs) calculated for this analysis are:
    ORDER BY Total_Revenue ASC
    LIMIT 5;
     
-8. **Top 5 Pizzas by Quantity**: 
+9. **Top 5 Pizzas by Quantity**: 
     ```sql
    SELECT pizza_name, SUM(quantity) AS Total_Pizza_Sold
    FROM pizza_sales
    GROUP BY pizza_name
    ORDER BY Total_Pizza_sold DESC  LIMIT 5;
-9. **Bottom 5 Pizzas by Quantity:**
+10. **Bottom 5 Pizzas by Quantity:**
     ```sql
     SELECT pizza_name, SUM(quantity) AS Total_Pizza_sold
     FROM pizza_sales
     GROUP BY pizza_name
     ORDER BY Total_Pizza_sold ASC
     LIMIT 5;
-10. **Top 5 Pizzas by Total Orders**:
+11. **Top 5 Pizzas by Total Orders**:
      ```sql
     SELECT pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
     FROM pizza_sales
     GROUP BY pizza_name
     ORDER BY Total_Orders DESC
     LIMIT 5;
-11. **Borrom 5 Pizzas by Total Orders**:
+12. **Borrom 5 Pizzas by Total Orders**:
      ```sql
     SELECT pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
     FROM pizza_sales
