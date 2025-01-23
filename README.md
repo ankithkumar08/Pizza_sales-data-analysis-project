@@ -68,23 +68,22 @@ The key performance indicators (KPIs) calculated for this analysis are:
       FROM pizza_sales;
 
 5  **Average Pizzas Per Order**:
-    ```sql
+     ```sql
       SELECT CAST(CAST(SUM(quantity) AS DECIMAL(10,2)) / 
       CAST(COUNT(DISTINCT order_id) AS DECIMAL(10,2)) AS DECIMAL(10,2)) AS Avg_Pizzas_per_order
       FROM pizza_sales;
+6
 
 ### Chart Queries
 
-1.**Daily Trend for Total Orders**:
-
-     ```sql
+1. **Daily Trend for Total Orders**:
+   ```sql
     SELECT DAYNAME(order_date) AS order_day, COUNT(DISTINCT order_id) AS total_orders 
     FROM pizza_sales
     GROUP BY DAYNAME(order_date);
    
-2.**Average Order Value**:
-
-     ```sql
+2. **Average Order Value**:
+   ```sql
     SELECT MONTHNAME(order_date) AS Month_Name, COUNT(DISTINCT order_id) AS Total_Orders
     FROM pizza_sales
     GROUP BY MONTHNAME(order_date);
