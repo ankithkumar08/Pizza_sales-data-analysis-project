@@ -108,9 +108,8 @@ The key performance indicators (KPIs) calculated for this analysis are:
        GROUP BY pizza_size
        ORDER BY pizza_size;
 
-5.**Pizzas Sold by Pizza Category Total**:
-
-      ```sql
+5.**Pizzas Sold by Pizza Category Total**: 
+    ```sql
        SELECT pizza_category, SUM(quantity) AS Total_Quantity_Sold
        FROM  pizza_sales
        WHERE MONTH(order_date) = 2
