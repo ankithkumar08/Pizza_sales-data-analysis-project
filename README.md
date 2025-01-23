@@ -101,7 +101,7 @@ The key performance indicators (KPIs) calculated for this analysis are:
     GROUP BY pizza_category;
      
 4.**Percentage of Sales by Pizza Size**:
-      ```sql
+    ```sql
       SELECT pizza_size, CAST(SUM(total_price) AS DECIMAL(10,2)) as total_revenue,
       CAST(SUM(total_price) * 100 / (SELECT SUM(total_price) from pizza_sales) AS DECIMAL(10,2)) AS PCT
       FROM pizza_sales
