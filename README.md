@@ -158,6 +158,9 @@ The key performance indicators (KPIs) calculated for this analysis are:
     LIMIT 5;
 
 ## Dataset  🗂️ 🛒 
+
+**The analysis is based on the dataset pizza_sales.csv, which contains the following columns**:
+
 **Dataset Columns**
  <h2>📂 Dataset Columns</h2>
         <table>
@@ -218,22 +221,6 @@ The key performance indicators (KPIs) calculated for this analysis are:
                 </tr>
             </tbody>
         </table>
-**The analysis is based on the dataset pizza_sales.csv, which contains the following columns**:
-
-**order_id**: Unique identifier for each order
-
-**pizza_name**: Name of the pizza ordered
-
-**pizza_category**: Category of the pizza (e.g., Vegetarian, Non-Vegetarian)
-
-**pizza_size**: Size of the pizza (e.g., Small, Medium, Large)
-
-**quantity**: Quantity of pizzas ordered
-
-**total_price**: Total price of the order
-
-**order_date**: Date and time when the order was placed
-
 
 ## Conclusion 💯🚀🎯
 This project provides valuable insights into pizza sales data, enabling business stakeholders to make data-driven decisions. The Power BI dashboard allows users to interact with the data and explore different aspects of the sales performance, including revenue, popular pizzas, and order trends.
