@@ -1,3 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Sales Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #e74c3c; /* Bright red */
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px #f5f5f5;
+        }
+        h2 {
+            color: #3498db; /* Light blue */
+            margin-top: 20px;
+        }
+        p, ul {
+            font-size: 1.1em;
+        }
+        .project-overview {
+            background-color: #2ecc71; /* Green */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.3em;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .tools {
+            background-color: #f1c40f; /* Yellow */
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.2em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #e74c3c; /* Match the title */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍕 Pizza Sales Analysis</h1>
+        <div class="project-overview">
+            <h2>Excel | MySQL | Power BI Dashboard</h2>
+        </div>
+        
+        <h2>🎯 Project Overview</h2>
+        <p>This project focuses on analyzing pizza sales data using a combination of tools:</p>
+        <ul>
+            <li><strong>Excel:</strong> For initial data cleaning and preprocessing.</li>
+            <li><strong>MySQL:</strong> To store, query, and manipulate structured data efficiently.</li>
+            <li><strong>Power BI Dashboard:</strong> For interactive visualizations and insights.</li>
+        </ul>
+        
+        <div class="tools">
+            <h2>Tools Used 🛠️</h2>
+            <ul>
+                <li>Excel for data preprocessing and quick calculations.</li>
+                <li>MySQL for robust database management.</li>
+                <li>Power BI for advanced visualization and dashboards.</li>
+            </ul>
+        </div>
+        
+        <h2>💡 Insights</h2>
+        <p>The following insights can be derived from the dataset:</p>
+        <ul>
+            <li>Identifying the best-selling pizzas.</li>
+            <li>Understanding customer preferences based on pizza categories, sizes, and ingredients.</li>
+            <li>Tracking revenue trends over time.</li>
+        </ul>
+        
+        <h2>📈 Dashboard Features</h2>
+        <ul>
+            <li>Interactive charts and filters for detailed analysis.</li>
+            <li>Visual representation of sales trends and customer behavior.</li>
+            <li>Real-time insights into pizza performance by category and size.</li>
+        </ul>
+    </div>
+</body>
+</html>
+
 # Pizza Sales Analysis - Excel |MySql| Power BI Dashboard 
 
 ## Project Overview 🎯
