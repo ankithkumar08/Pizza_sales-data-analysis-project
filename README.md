@@ -224,15 +224,25 @@ This project provides valuable insights into pizza sales data, enabling business
 [Access the interactive Power BI Dashboard](https://github.com/ankithkumar08/Pizza_sales-data-analysis-project/blob/main/Project2.pbix)
 
 <h3>The dashboard answers the following business questions:</h3>📋
+
 - What are the total sales and key metrics?
+  
 - When are the busiest times for orders?
+  
 - What is the daily and monthly trend of orders?
+  
 - What percentage of sales is contributed by pizza category and size?
+  
 - What is the total number of pizzas sold by category?
+  
 - Best/Worst Sellers Analysis
+
 - What are the best-selling pizzas?
+  
 - What are the worst-selling pizzas?
+  
 - Which pizzas rank in the top 5 for revenue, quantity, and total orders?
+  
 - Which pizzas rank in the bottom 5 for revenue, quantity, and total orders?
 
 ## Connect with Me 🤝
