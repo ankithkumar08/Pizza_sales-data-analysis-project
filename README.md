@@ -158,6 +158,66 @@ The key performance indicators (KPIs) calculated for this analysis are:
     LIMIT 5;
 
 ## Dataset  🗂️ 🛒 
+**Dataset Columns**
+ <h2>📂 Dataset Columns</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Column Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>pizza_id</code></td>
+                    <td>Unique identifier for each pizza.</td>
+                </tr>
+                <tr>
+                    <td><code>order_id</code></td>
+                    <td>Unique identifier for each order.</td>
+                </tr>
+                <tr>
+                    <td><code>pizza_name_id</code></td>
+                    <td>Unique identifier linking to the pizza name.</td>
+                </tr>
+                <tr>
+                    <td><code>quantity</code></td>
+                    <td>Number of pizzas ordered.</td>
+                </tr>
+                <tr>
+                    <td><code>order_date</code></td>
+                    <td>Date when the order was placed.</td>
+                </tr>
+                <tr>
+                    <td><code>order_time</code></td>
+                    <td>Time when the order was placed.</td>
+                </tr>
+                <tr>
+                    <td><code>unit_price</code></td>
+                    <td>Price per unit of the pizza.</td>
+                </tr>
+                <tr>
+                    <td><code>total_price</code></td>
+                    <td>Total price of the order (calculated based on quantity and unit price).</td>
+                </tr>
+                <tr>
+                    <td><code>pizza_size</code></td>
+                    <td>Size of the pizza (e.g., Small, Medium, Large).</td>
+                </tr>
+                <tr>
+                    <td><code>pizza_category</code></td>
+                    <td>Category of the pizza (e.g., Vegetarian, Non-Vegetarian).</td>
+                </tr>
+                <tr>
+                    <td><code>pizza_ingredients</code></td>
+                    <td>Ingredients used in the pizza.</td>
+                </tr>
+                <tr>
+                    <td><code>pizza_name</code></td>
+                    <td>Name of the pizza.</td>
+                </tr>
+            </tbody>
+        </table>
 **The analysis is based on the dataset pizza_sales.csv, which contains the following columns**:
 
 **order_id**: Unique identifier for each order
