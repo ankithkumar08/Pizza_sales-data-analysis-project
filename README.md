@@ -1,5 +1,5 @@
  <h1>🍕 Pizza Sales Analysis</h1>
-            <h2>Excel | MySQL | Power BI Dashboard</h2>
+            <h2 center>Excel | MySQL | Power BI Dashboard</h2>
 
 ## Project Overview 🎯
 This project aims to analyze key performance indicators (KPIs) and visualize various aspects of pizza sales data using Power BI. The analysis is based on the provided dataset [`pizza_sales.csv`](https://github.com/ankithkumar08/Pizza_sales-data-analysis-project/blob/main/pizza_sales.csv), and includes key insights such as revenue trends, sales by category, and the performance of different pizzas. The visualizations help us understand the performance of the pizza business in terms of sales, order trends, and popular products.
