@@ -1,14 +1,9 @@
- <h1 style="text-align: center; color: #e74c3c; font-size: 2.5em;">🍕 Pizza Sales Analysis</h1>
-    <h2 style="text-align: center; color: #3498db;">Excel | MySQL | Power BI Dashboard</h2>
+                                                             <h1 >🍕 Pizza Sales Analysis</h1>
+                                                                      <h2 >Excel | MySQL | Power BI Dashboard</h2>
 
 ## Project Overview 🎯
 This project aims to analyze key performance indicators (KPIs) and visualize various aspects of pizza sales data using Power BI. The analysis is based on the provided dataset [`pizza_sales.csv`](https://github.com/ankithkumar08/Pizza_sales-data-analysis-project/blob/main/pizza_sales.csv), and includes key insights such as revenue trends, sales by category, and the performance of different pizzas. The visualizations help us understand the performance of the pizza business in terms of sales, order trends, and popular products.
 
-The dashboard answers the following business questions:
-- What are the total sales and revenue generated from pizza orders?
-- Which pizzas are performing well in terms of revenue and quantity sold?
-- What are the sales trends by day and month?
-- How do different pizza categories and sizes perform in terms of sales?
 
 ## KPI Requirements 🔎
 The key performance indicators (KPIs) calculated for this analysis are:
@@ -228,7 +223,19 @@ This project provides valuable insights into pizza sales data, enabling business
 
 [Access the interactive Power BI Dashboard](https://github.com/ankithkumar08/Pizza_sales-data-analysis-project/blob/main/Project2.pbix)
 
-## Connect with Me
+<h3>The dashboard answers the following business questions:</h3>📋
+- What are the total sales and key metrics?
+- When are the busiest times for orders?
+- What is the daily and monthly trend of orders?
+- What percentage of sales is contributed by pizza category and size?
+- What is the total number of pizzas sold by category?
+- Best/Worst Sellers Analysis
+- What are the best-selling pizzas?
+- What are the worst-selling pizzas?
+- Which pizzas rank in the top 5 for revenue, quantity, and total orders?
+- Which pizzas rank in the bottom 5 for revenue, quantity, and total orders?
+
+## Connect with Me 🤝
 Find out more about my journey and connect with me on [LinkedIn](www.linkedin.com/in/ankithkumar-chillapalli).
 
 ---
