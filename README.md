@@ -223,6 +223,7 @@ This project provides valuable insights into pizza sales data, enabling business
 
 [Access the interactive Power BI Dashboard](https://github.com/ankithkumar08/Pizza_sales-data-analysis-project/blob/main/Project2.pbix)
 
+[Video](https://github.com/ankithkumar08/Pizza_sales-data-analysis-project/blob/main/powerBI.mp4)
 <h3>The dashboard answers the following business questions:</h3>📋
 
 - What are the total sales and key metrics?
