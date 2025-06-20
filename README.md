@@ -245,6 +245,14 @@ This project provides valuable insights into pizza sales data, enabling business
 - Which pizzas rank in the top 5 for revenue, quantity, and total orders?
   
 - Which pizzas rank in the bottom 5 for revenue, quantity, and total orders?
+---
+## 👨‍💻 Author
+
+**Ankithkumar Chillapalli**  
+B.Tech in CSE (AI & ML) | Aspiring Data Analyst | Passionate about SQL and Data Analytics
+
+---
+
 
 ## Connect with Me 🤝
 Find out more about my journey and connect with me on [LinkedIn](https://www.linkedin.com/in/ankithkumar08-data-analyst).
